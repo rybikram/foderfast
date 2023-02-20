@@ -1,0 +1,283 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    text-align: center;
+    position: sticky; /*will adjust all relative ex. BGIMG*/
+    top: 0px;
+    
+}
+
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    
+    z-index: -1;   /*content will come up background*/
+    opacity: 0.5;
+}
+/*Navigation bar for Logo and Image */
+#logo{
+   margin: 7px 20px;
+
+}
+#logo img{
+height: 40px;
+width: 40px;
+border-radius: 35px;
+margin: 3px 6px;
+}
+
+
+/*Navigation bar for list item styling*/
+#navbar ul{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+#navbar ul li{
+    list-style:none;
+    padding: 7px;
+    font-size: 1.07rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 6px 0;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction:column;
+    padding: 2px 200px;
+    height: 385px;
+    justify-content: center;
+    align-items: center; 
+    
+   
+}
+#home::before{
+    content: "";
+    background:url('../image/burger.jpg') center center/cover;
+    height: 73%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    
+    z-index: -1; 
+    opacity: 9.96;
+    background-repeat: no-repeat;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.05rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/* services section */
+
+#services{
+    display: flex;
+    margin: 100px 0px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: -87px 8px;
+    border-radius: 23px;
+    padding: 30px;
+    background-color: rgb(245, 229, 229);
+    
+}
+
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+ 
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/* client section */
+#clients-section{
+    height: 344px;
+}
+ #clients-section::before{
+    content: "";
+    background: url('../image/forclient.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    height: 55%;
+    width: 100%;
+    opacity: 0.9;
+} 
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 140px;
+    padding: 28px;
+    }
+
+/* .clients-item{
+    padding: 28px;
+} */
+
+
+
+/* contact section */
+#contact{
+    position: relative;
+    
+   
+}
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 506px;
+z-index: -1;
+opacity: 0.7;
+background: url('../image/forcontact.jpg') no-repeat center center/cover;
+
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+     font-family: 'Raleway', sans-serif;
+}
+
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 9px;
+}
+
+
+
+/* footer section */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    height: 40px;
+    
+}
+
+
+
+/* utility class  */
+ .h-primary{
+    font-size: 2.7rem;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    
+    
+    
+}
+
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+
+.btn{
+
+    padding: 5px 15px;
+    border: 1px solid white;
+    background-color:firebrick;
+    color:white;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 1.04rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+#submit{
+
+    padding: 5px 15px;
+    border: 1px solid white;
+    background-color:rgb(207, 179, 179);
+    color:black;
+    margin: 15px;
+    border-radius: 8px;
+    font-size: 1.04rem;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+#submit:hover{
+    color: rgb(27, 146, 146);
+    border-radius: 28px;
+}
+
